@@ -65,6 +65,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+    });
+});
+
 // bad, json with an error mes prop
 app.get('/bad', (req, res) => {
     res.send({
